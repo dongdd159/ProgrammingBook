@@ -81,10 +81,10 @@ public class Book {
         }
         return count;
     }
-    public static Book[] findBook(int x,int[] arr, Book[] arr1){
-        Book[] temp ;
+    public static String[] findBook(int x,int[] arr, String[] arr1){
+        String[] temp ;
         int count = countBook(x, arr);
-        temp = new Book[count];
+        temp = new String[count];
         for (int i=0;i<count;i++){
             if (arr[i]<x){
                 temp[i]=arr1[i];
